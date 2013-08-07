@@ -5,13 +5,21 @@
   "main": "index.js",
   "author": "Nathan Bowser",
   "license": "BSD",
+  "scripts": {
+    "bundle": "node bundle.js"
+  },
   "dependencies": {
     "lodash": "~1.3.1",
     "a": "0.0.1",
-    "b": "0.0.1"
+    "b": "0.0.1",
+    "express": "~3.3.4"
   },
   "bundledDependencies": {
     "a": "0.0.1",
     "b": "0.0.1"
+  },
+  "devDependencies": {
+    "read-installed": "~0.2.3",
+    "rimraf": "~2.2.2"
   }
 }
