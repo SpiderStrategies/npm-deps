@@ -30,9 +30,6 @@ fs.readdir(path.resolve('lib'), function (err, libs) {
   function next() {
     if (++calls !== total) { return }
 
-    libs.forEach(function (lib) {
-      delete deps[lib]
-    })
 
     // Deps contains all of our external dependencies, we need to install them.
 
